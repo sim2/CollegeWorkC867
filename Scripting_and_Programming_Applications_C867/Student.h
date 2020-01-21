@@ -3,10 +3,12 @@
 class Student {
 public:
 	void FirstName;
-	void LastName :
-	void emailAddress;
-	void age;
-	void daysToComplete :
-	void degreeType  //Note: Degree type should be populated in subclasses only.
+	void LastName;
+	void EmailAddress;
+	void Age;
+	void DaysToComplete;
+	void DegreeType;  //Note: Degree type should be populated in subclasses only.
 
 };
+
+
