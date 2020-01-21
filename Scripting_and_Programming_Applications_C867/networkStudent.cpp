@@ -1,0 +1,2 @@
+
+class NetworkStudent : public Student {};

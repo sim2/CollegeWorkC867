@@ -1,0 +1,2 @@
+
+class SoftwareStudent : public Student {};

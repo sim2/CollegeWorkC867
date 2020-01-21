@@ -1,4 +1,6 @@
 #pragma once
+#include <iostream>
+#include <vector>
 
 class Student {
 public:
@@ -12,3 +14,18 @@ public:
 };
 
 
+/*                      "call to action" - makes everthing happen.
+void main() {
+	Student Student1;
+
+	Student1.Print();
+
+	Student1.SetNameAndPrice("Soap", 385);
+	Student1.Print();
+
+	delete Student;
+
+	return 0;
+}
+
+*/

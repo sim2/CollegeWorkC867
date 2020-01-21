@@ -1,0 +1,2 @@
+
+class SecurityStudent : public Student {};
