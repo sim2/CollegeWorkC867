@@ -1,49 +1,48 @@
 
 class Student {	                   //redundant class from Student.h
 public:
-	int StudentID;
+	string StudentID;
 	string FirstName;
 	string LastName;
 	string EmailAddress;
 	int Age;
-	int DaysToComplete;
+	int DaysToComplete<>;
 	string DegreeType;
-
-};
 
 //2.a & b
 
-class Student {
-public:
-	void SetStudentID(int StudentID);    // Mutator
+	void SetStudentID(string StudentID);    // Mutator
 	void SetFirstName(string FirstName); 
 	void SetLastName(string LastName);
 	void SetEmailAddress(string EmailAddress);
 	void SetAge(int Age);
-	void SetDaysToComplete(int DaysToComplete);
+	void SetDaysToComplete(array DaysToComplete);
 	void SetDegreeType(string DegreeType);
 
 
-	int  GetFirstName() const;          // Accessor
-	int  GetLastName() const;
-	int  GetEmailAddress() const;
+	string  GetStudentID() const;             // Accessor
+	string  GetFirstName() const;          
+	string  GetLastName() const;
+	string  GetEmailAddress() const;
 	int  GetAge() const;
-	int  GetDaysToComplete() const;
-	int  GetDegreeType() const;
+	array  GetDaysToComplete() const;
+	string  GetDegreeType() const;
 
 };
 
-// 2.c
+	// 2.c
 
 Student::Student() {
-	FN = FirstName;
-	LN = LastName;
-	EA = EmailAddress;
-	Age = Age;
-	DaysToComplete = DaysToComplete;
-	GetDegreeType = GetDegreeType;
-
+	
+	StudentID = "";
+	FirstName = "";
+	LastName = "";
+	EmailAddress = "";
+	Age = "";
+	DaysToComplete = "";
+	DegreeType = "";
 };
+
 	//2.d
 
 cout << Student << endl;
