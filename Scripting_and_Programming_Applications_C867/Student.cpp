@@ -28,7 +28,6 @@ public:
 	array  GetDaysToComplete() const;
 	string  GetDegreeType() const;
 
-	return;
 };
 
 	// 2.c
@@ -42,9 +41,11 @@ Student::Student() {
 	Age = "-1";
 	DaysToComplete = {};
 	DegreeType = "";
+
+	return;
 };
 
-// 2.e
+	// 2.e
 
 Student::~Student() {
 
@@ -55,16 +56,16 @@ Student::~Student() {
 	delete Age;
 	delete DaysToComplete;
 	delete DegreeType;
+
+	return;
 };
 
 	//2.d
-
 cout << studentData << endl;
 
 
-	//2.f what do i do? -  virtual getDegreeProgram()
-Student.GetDegreeProgram(); 
-
+	//2.f virtual getDegreeProgram()
+string GetDegreeProgram() const; 
 
 
 /*
