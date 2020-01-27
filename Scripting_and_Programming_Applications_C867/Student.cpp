@@ -1,13 +1,13 @@
 
 class Student {	                   //redundant class from Student.h
 public:
-	void StudentID
-	void FirstName;
-	void LastName;
-	void EmailAddress;
-	void Age;
-	void DaysToComplete;
-	void DegreeType;
+	int StudentID;
+	string FirstName;
+	string LastName;
+	string EmailAddress;
+	int Age;
+	int DaysToComplete;
+	string DegreeType;
 
 };
 
