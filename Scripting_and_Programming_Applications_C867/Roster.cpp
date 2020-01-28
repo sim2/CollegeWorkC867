@@ -1,15 +1,11 @@
 
 // E.1
 
-class RosterArray{
+class Roster{
 
-	const string studentData[] =
-	{ "A1,John,Smith,John1989@gm ail.com,20,30,35,40,SECURITY",
-	  "A2,Suzan,Erickson,Erickson_1990@gmailcom,19,50,30,40,NETWORK",
-	  "A3,Jack,Napoli,The_lawyer99yahoo.com,19,20,40,33,SOFTWARE",
-	  "A4,Erin,Black,Erin.black@comcast.net,22,50,58,40,SECURITY",
-	  "A5,Simcha,Hochman,shochm1@wgu.edu,27,40,50,21,SOFTWARE"
-	};
+public:
+	array classRosterArray{};
+	
 };
 
 
@@ -47,3 +43,5 @@ void main() {
 
 	return 0;
 }
+
+
