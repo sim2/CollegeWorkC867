@@ -1,2 +1,7 @@
 
-class NetworkStudent : public Student {};
+class NetworkStudent : public Student {
+
+	string GetDegreeProgram() {};
+
+
+};

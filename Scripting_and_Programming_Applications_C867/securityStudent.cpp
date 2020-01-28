@@ -1,2 +1,7 @@
 
-class SecurityStudent : public Student {};
+class SecurityStudent : public Student {
+
+	string GetDegreeProgram() {};
+
+
+};

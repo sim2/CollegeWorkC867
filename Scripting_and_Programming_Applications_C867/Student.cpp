@@ -6,7 +6,7 @@ public:
 	string LastName;
 	string EmailAddress;
 	int Age;
-	int DaysToComplete<>;
+	int DaysToComplete[];
 	string DegreeType;
 
 //2.a & b
@@ -65,7 +65,7 @@ cout << studentData << endl;
 
 
 	//2.f virtual getDegreeProgram()
-string GetDegreeProgram() const; 
+string GetDegreeProgram() {};
 
 
 /*

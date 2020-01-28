@@ -1,2 +1,7 @@
 
-class SoftwareStudent : public Student {};
+class SoftwareStudent : public Student {
+
+	string GetDegreeProgram() {};
+
+
+};
