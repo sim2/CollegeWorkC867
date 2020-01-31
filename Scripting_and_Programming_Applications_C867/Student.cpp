@@ -24,8 +24,8 @@ public:
 	string  GetFirstName() const;          
 	string  GetLastName() const;
 	string  GetEmailAddress() const;
-	int  GetAge() const;
-	array  GetDaysToComplete() const;
+	int		GetAge() const;
+	array   GetDaysToComplete() const;
 	string  GetDegreeType() const;
 
 };

@@ -1,3 +1,13 @@
+#include <string>
+#include <array>
+#include <sstream>
+#include "degree.h"
+#include "Student.h"
+#include "roster.h"
+#include "networkStudent.h"
+#include "securityStudent.h"
+#include "softwareStudent.h"
+#include "pch.h"
 
 // E.1
 
@@ -32,6 +42,10 @@ classRoster.remove("A3");
 
 void main() {
 
+	// F.1
+	cout << "Scripting and Programming Applications using C++" << endl;
+	cout << "Student ID = 858824 Name = Simcha Hochman" endl;
+
 	const string studentData[] =
 	{ "A1,John,Smith,John1989@gm ail.com,20,30,35,40,SECURITY",
 	  "A2,Suzan,Erickson,Erickson_1990@gmailcom,19,50,30,40,NETWORK",
@@ -40,11 +54,23 @@ void main() {
 	  "A5,Simcha,Hochman,shochm1@wgu.edu,27,40,50,21,SOFTWARE"
 	};
 
-	// F.1
-	cout << "Scripting and Programming Applications using C++" << endl; 
-	cout << "Student ID = 858824 Name = Simcha Hochman" endl;
 
-	
+	// iterate through student data
+	std::string studentData = "";
+	std::istringstream ss(studentData);
+	std::string token;
+
+	while (std::getline(ss, token, ',')) {
+		std::cout << token << '\n';
+	}
+
+	// Copy studentData to New strings
+	for (i = 0; i < 5; i++) {
+		stringstream ss (studentData[i])
+	}
+
+
+	/*
 	Student Student1;
 
 	Student1.Print();
@@ -53,8 +79,8 @@ void main() {
 	Student1.Print();
 
 	delete Student;
-
-	return 0;
+						*/
+	return 0;      
 }
 
 
