@@ -1,4 +1,4 @@
 #pragma once
 
 
-enum Degree {SECURITY, NETWORKING, SOFTWARE};
+enum class Degree : int {SECURITY, NETWORKING, SOFTWARE};
