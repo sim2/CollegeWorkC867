@@ -10,14 +10,19 @@ class Student
 {
 
 public:
+	
+	Student();
 
-	string StudentID;
-	string FirstName;
-	string LastName;
-	string EmailAddress;
-	int Age;
-	int DaysToComplete[];
-	string DegreeType;  //Note: Degree type should be populated in subclasses only.
+	Student(string, string, string, string, int, int*);
+
+	//getters
+	string getStudentID();
+	string getFirstName();
+	string getLastName();
+	string getEmailAddress();
+	int getAge();
+	int *getDaysToComplete();
+	  //Note: Degree type should be populated in subclasses only.
 	
 	//setters
 	void setFirstName(string FirstName);
@@ -29,9 +34,8 @@ public:
 	void setDegreeType(string DegreeType);
 
 	virtual void print();
-	virtual Degree getDegree();
+	virtual Degree getDegreeType();
 
-	//Deconstructor
 	~Student();
 
 private:
