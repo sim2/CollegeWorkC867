@@ -28,7 +28,7 @@ string Student::getFirstName()
 	return FirstName;
 }
 
-void Student::setFirstName(string fiName)
+void Student::setFirstName(string FirstNameVariable)
 {
 	FirstName = FirstNameVariable;
 }
@@ -38,7 +38,7 @@ string Student::getLastName()
 	return LastName;
 }
 
-void Student::setLastName(string laName)
+void Student::setLastName(string LastNameVariable)
 {
 	LastName = LastNameVariable;
 }
@@ -47,7 +47,7 @@ string Student::getEmailAddress()
 {
 	return EmailAddress;
 }
-void Student::setEmailAddress(string emAddr)
+void Student::setEmailAddress(string EmailAddressVariable)
 {
 	EmailAddress = EmailAddressVariable;
 }
@@ -57,7 +57,7 @@ int Student::getAge()
 	return Age;
 }
 
-void Student::setAge(int a)
+void Student::setAge(int AgeVariable)
 {
 	Age = AgeVariable;
 }
@@ -66,8 +66,8 @@ string Student::getStudentID() {
 	return studentID;
 }
 
-void Student::setStudentID(string studentID) {
-	Student::studentID = studentID;
+void Student::setStudentID(string studentIDVariable) {
+	Student::studentID = studentIDVariable;
 }
 
 int *Student::getDaysToComplete() {
@@ -81,7 +81,7 @@ void Student::setDaysToComplete(int DaysToComplete1, int DaysToComplete2, int Da
 	Student::DaysToComplete[2] = DaysToComplete3;
 }
 
-void Student::setDegree(string DegreeVariable)
+void Student::setDegreeType(string DegreeVariable)
 {
 	DegreeType = DegreeVariable;
 }
