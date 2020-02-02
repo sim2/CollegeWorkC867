@@ -5,7 +5,7 @@
 
 NetworkStudent::NetworkStudent() {}
 
-NetworkStudent::NetworkStudent(string studentID, string FirstName, string LastName, string EmailAddress, int Age, int *DaysToComplete, Degree DegreeType) : Student(studID, fiName, laName, emAddr, a, nmDays) {
+NetworkStudent::NetworkStudent(string studentID, string FirstName, string LastName, string EmailAddress, int Age, int *DaysToComplete, Degree DegreeType) : Student(studentID, FirstName, LastName, EmailAddress, Age, DaysToComplete) {
 	degree = deg;
 }
 

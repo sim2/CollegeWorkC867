@@ -19,7 +19,7 @@ public:
 	int DaysToComplete[];
 	string DegreeType;  //Note: Degree type should be populated in subclasses only.
 	
-	//stters
+	//setters
 	void setFirstName(string FirstName);
 	void setLastName(string LastName);
 	void setEmailAddress(string EmailAddress);

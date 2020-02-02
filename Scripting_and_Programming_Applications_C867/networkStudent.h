@@ -5,9 +5,9 @@ class NetworkStudent : public Student {
 public:
 	NetworkStudent();
 
-	NetworkStudent(string, string, string, string, int, int*, DegreeType);
+	NetworkStudent(string, string, string, string, int, int*, Degree);
 
-	Degree getDegreeType() override;
+	Degree getDegree() override;
 
 	void print() override;
 
