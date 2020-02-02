@@ -1,6 +1,7 @@
 #include <string>
 #include <array>
 #include <sstream>
+#include <iostream>
 #include "degree.h"
 #include "Student.h"
 #include "roster.h"
