@@ -7,7 +7,7 @@ public:
 
 	SecurityStudent(string, string, string, string, int, int*, Degree);
 
-	Degree getDegree() override;
+	Degree getDegreeType() override;
 
 	void print() override;
 private:
