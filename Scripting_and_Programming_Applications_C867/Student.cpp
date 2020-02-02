@@ -73,7 +73,7 @@ int *Student::getDaysToComplete() {
 	return DaysToComplete;
 }
 
-void Student::setDaysToComplete(int day0, int day1, int day2)
+void Student::setDaysToComplete(int DaysToComplete1, int DaysToComplete2, int DaysToComplete3)
 {
 	Student::DaysToComplete[0] = DaysToComplete1;
 	Student::DaysToComplete[1] = DaysToComplete2;
