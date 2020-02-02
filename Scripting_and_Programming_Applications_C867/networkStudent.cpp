@@ -5,8 +5,8 @@
 
 NetworkStudent::NetworkStudent() {}
 
-NetworkStudent::NetworkStudent(string studentID, string FirstName, string LastName, string EmailAddress, int Age, int *DaysToComplete, Degree DegreeType) : Student(studentID, FirstName, LastName, EmailAddress, Age, DaysToComplete) {
-	degree = DegreeType;
+NetworkStudent::NetworkStudent(string studentID, string FirstName, string LastName, string EmailAddress, int Age, int *DaysToComplete, Degree DegreeVariable) : Student(studentID, FirstName, LastName, EmailAddress, Age, DaysToComplete) {
+	DegreeType = DegreeVariable;
 }
 
 Degree NetworkStudent::getDegree() {

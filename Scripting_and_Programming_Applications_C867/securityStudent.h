@@ -5,9 +5,9 @@ class SecurityStudent : public Student {
 public:
 	SecurityStudent();
 
-	SecurityStudent(string, string, string, string, int, int*, DegreeType);
+	SecurityStudent(string, string, string, string, int, int*, Degree);
 
-	Degree getDegreeType() override;
+	Degree getDegree() override;
 
 	void print() override;
 private:
