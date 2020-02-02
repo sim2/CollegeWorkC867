@@ -3,7 +3,8 @@
 #include <iostream>
 #include "Student.h"
 #include "Degree.h"
-#include using namespace std;
+
+using namespace std;
 
 Student::Student()
 {
@@ -101,7 +102,7 @@ Student::~Student()
 
 }
 
-
+/*
 
 
 class Student {	                   //redundant class from Student.h
