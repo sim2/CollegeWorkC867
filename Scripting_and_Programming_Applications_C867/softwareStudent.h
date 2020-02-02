@@ -11,5 +11,5 @@ public:
 
 	void print() override;
 private:
-	Degree degree;
+	Degree DegreeType;
 };
