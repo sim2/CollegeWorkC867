@@ -6,11 +6,11 @@
 NetworkStudent::NetworkStudent() {}
 
 NetworkStudent::NetworkStudent(string studentID, string FirstName, string LastName, string EmailAddress, int Age, int *DaysToComplete, Degree DegreeType) : Student(studentID, FirstName, LastName, EmailAddress, Age, DaysToComplete) {
-	degree = deg;
+	degree = DegreeType;
 }
 
 Degree NetworkStudent::getDegree() {
-	return degree;
+	return DegreeType;
 }
 
 void NetworkStudent::print() {

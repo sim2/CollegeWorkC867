@@ -5,12 +5,12 @@
 
 SecurityStudent::SecurityStudent() {}
 
-SecurityStudent::SecurityStudent(string studentID, string FirstName, string LastName, string EmailAddress, int Age, int *DaysToComplete, Degree DegreeType) : Student(studID, fiName, laName, emAddr, a, nmDays) {
-	degree = deg;
+SecurityStudent::SecurityStudent(string studentID, string FirstName, string LastName, string EmailAddress, int Age, int *DaysToComplete, Degree DegreeType) : Student(studentID, FirstName, LastName, EmailAddress, Age, DaysToComplete) {
+	degree = DegreeType;
 }
 
 Degree SecurityStudent::getDegreeType() {
-	return degree;
+	return DegreeType;
 }
 
 void SecurityStudent::print() {

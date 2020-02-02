@@ -6,12 +6,12 @@
 
 SoftwareStudent::SoftwareStudent() {}
 
-SoftwareStudent::SoftwareStudent(string studentID, string FirstName, string LastName, string EmailAddress, int Age, int DaysToComplete, Degree DegreeType) : Student(studID, fiName, laName, emAddr, a, nmDays) {
-	degree = deg;
+SoftwareStudent::SoftwareStudent(string studentID, string FirstName, string LastName, string EmailAddress, int Age, int DaysToComplete, Degree DegreeType) : Student(studentID, FirstName, LastName, EmailAddress, Age, DaysToComplete) {
+	degree = DegreeType;
 }
 
 Degree SoftwareStudent::getDegreeType() {
-	return degree;
+	return DegreeType;
 }
 
 void SoftwareStudent::print() {
