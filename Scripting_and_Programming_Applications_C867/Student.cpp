@@ -80,9 +80,9 @@ void Student::setDaysToComplete(int DaysToComplete1, int DaysToComplete2, int Da
 	Student::DaysToComplete[2] = DaysToComplete3;
 }
 
-void Student::setDegree(string degree)
+void Student::setDegree(string DegreeVariable)
 {
-	degree = degree;
+	DegreeType = DegreeVariable;
 }
 
 //Student::Student() {}
