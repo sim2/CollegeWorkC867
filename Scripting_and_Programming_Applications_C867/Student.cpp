@@ -10,55 +10,55 @@ Student::Student()
 
 }
 
-Student::Student(string studID, string fiName, string laName, string emAddr, int a, int* nmDays)
+Student::Student(string studentIDVariable, string FirstNameVariable, string LastNameVariable, string EmailAddressVariable, int AgeVariable, int* DaysToCompleteVariable)
 {
-	studentID = studID;
-	firstName = fiName;
-	lastName = laName;
-	emailAddress = emAddr;
-	age = a;
-	numDays[0] = nmDays[0];
-	numDays[1] = nmDays[1];
-	numDays[2] = nmDays[2];
+	studentID = studentIDVariable;
+	FirstName = FirstNameVariable;
+	LastName = LastNameVariable;
+	EmailAddress = EmailAddressVariable;
+	Age = AgeVariable;
+	DaysToComplete[0] = DaysToCompleteVariable[0];
+	DaysToComplete[1] = DaysToCompleteVariable[1];
+	DaysToComplete[2] = DaysToCompleteVariable[2];
 }
 
 string Student::getFirstName()
 {
-	return firstName;
+	return FirstName;
 }
 
 void Student::setFirstName(string fiName)
 {
-	firstName = fiName;
+	FirstName = FirstNameVariable;
 }
 
 string Student::getLastName()
 {
-	return lastName;
+	return LastName;
 }
 
 void Student::setLastName(string laName)
 {
-	lastName = laName;
+	LastName = LastNameVariable;
 }
 
 string Student::getEmailAddress()
 {
-	return emailAddress;
+	return EmailAddress;
 }
 void Student::setEmailAddress(string emAddr)
 {
-	emailAddress = emAddr;
+	EmailAddress = EmailAddressVariable;
 }
 
 int Student::getAge()
 {
-	return age;
+	return Age;
 }
 
 void Student::setAge(int a)
 {
-	age = a;
+	Age = AgeVariable;
 }
 
 string Student::getStudentID() {
@@ -69,15 +69,15 @@ void Student::setStudentID(string studentID) {
 	Student::studentID = studentID;
 }
 
-int *Student::getNumDays() {
-	return numDays;
+int *Student::getDaysToComplete() {
+	return DaysToComplete;
 }
 
-void Student::setNumDays(int day0, int day1, int day2)
+void Student::setDaysToComplete(int day0, int day1, int day2)
 {
-	Student::numDays[0] = day0;
-	Student::numDays[1] = day1;
-	Student::numDays[2] = day2;
+	Student::DaysToComplete[0] = DaysToComplete1;
+	Student::DaysToComplete[1] = DaysToComplete2;
+	Student::DaysToComplete[2] = DaysToComplete3;
 }
 
 void Student::setDegree(string degree)
