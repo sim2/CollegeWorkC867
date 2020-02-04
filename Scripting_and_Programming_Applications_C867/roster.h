@@ -17,7 +17,7 @@ class Roster {
 
 		void printByDegreeProgram(int DegreeType);
 
-		void printDaysInCourse(string);
+		void printDaysInCourse(string studentIDVariable);
 
 		void printInvalidEmails();
 

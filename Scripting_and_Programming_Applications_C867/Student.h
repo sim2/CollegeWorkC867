@@ -15,7 +15,6 @@ public:
 
 	Student(string, string, string, string, int, int*);
 
-	//getters
 	string getStudentID();
 	string getFirstName();
 	string getLastName();
@@ -24,7 +23,6 @@ public:
 	int *getDaysToComplete();
 	  //Note: Degree type should be populated in subclasses only.
 	
-	//setters
 	void setFirstName(string FirstName);
 	void setLastName(string LastName);
 	void setEmailAddress(string EmailAddress);

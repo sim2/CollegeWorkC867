@@ -49,8 +49,8 @@ void Roster::printDaysInCourse(string studentIDVariable) {
 				+ (*classRosterArray[i]).getDaysToComplete()[2]) / 3;
 			cout << "Average days for studentID: " << studentIDVariable << " to complete: " << avg << '\n';
 		}
+		cout << '\n';
 	}
-	cout << '\n';
 
 // Print by Degree Type
 void Roster::printByDegreeProgram(int DegreeType) {
@@ -116,12 +116,12 @@ void Roster::remove(string studentIDVariable) {
 		}
 	}
 	if (!removed) {
-		cout << "Student with ID Number: " << studentID << " not found." << '\n';
+		cout << "Student with ID Number: " << studentIDVariable << " not found." << '\n';
 	}
 }
 
 // F
-/*
+
 void main() {
 
 	// F.1
