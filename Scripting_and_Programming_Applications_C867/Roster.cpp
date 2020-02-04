@@ -18,15 +18,15 @@ Roster::Roster(){
 }
 
 void Roster::add(string studentIDVariable, string FirstNameVariable, string LastNameVariable, string EmailAddressVariable, int AgeVariable, int DaysToComplete1Variable, int DaysToComplete2Variable, int DaysToComplete3Variable, Degree DegreeTypeVariable) {
-	int DaysToComplete[] = { DaysToComplete1, DaysToComplete2, DaysToComplete3 };
+	int DaysToComplete[] = { DaysToComplete1Variable, DaysToComplete2Variable, DaysToComplete3Variable };
 	if (DegreeType == Degree::NETWORKING) {
-		classRosterArray[addIndex++] = new NetworkStudent(studentID, FirstName, LastName, EmailAddress, Age, DaysToComplete, DegreeType);
+		classRosterArray[addIndex++] = new NetworkStudent(studentIDVariable, FirstNameVariable, LastNameVariable, EmailAddressVariable, AgeVariable, DaysToCompleteVariable, DegreeTypeVariable);
 	}
 	if (DegreeType == Degree::SECURITY) {
-		classRosterArray[addIndex++] = new SecurityStudent(studentID, FirstName, LastName, EmailAddress, Age, DaysToComplete, DegreeType);
+		classRosterArray[addIndex++] = new SecurityStudent(studentIDVariable, FirstNameVariable, LastNameVariable, EmailAddressVariable, AgeVariable, DaysToCompleteVariable, DegreeTypeVariable);
 	}
 	if (DegreeType == Degree::SOFTWARE) {
-		classRosterArray[addIndex++] = new SoftwareStudent(studentID, FirstName, LastName, EmailAddress, Age, DaysToComplete, DegreeType);
+		classRosterArray[addIndex++] = new SoftwareStudent(studentID, FirstNameVariable, LastNameVariable, EmailAddressVariable, AgeVariable, DaysToCompleteVariable, DegreeTypeVariable);
 	}
 }
 
@@ -40,7 +40,7 @@ void Roster::printAll() {
 	cout << '\n';
 }
 
-//printing the average DaysToComplete
+//Print Average DaysToComplete
 void Roster::printnumDays(string studentID) {
 	for (int i = 0; i < 5; i++) {
 		if ((*classRosterArray[i]).getStudentID() == studentID) {
@@ -52,7 +52,7 @@ void Roster::printnumDays(string studentID) {
 	}
 	cout << '\n';
 
-// Printing student by Degree Type
+// Print by Degree Type
 void Roster::printByDegree(string degree) {
 	Degree testDeg = Degree::SOFTWARE;
 	if (degree == "SECURITY") {
@@ -76,7 +76,7 @@ void Roster::printByDegree(string degree) {
 	cout << '\n';
 }
 
-// Checking through emails
+// Reconcile Emails
 void Roster::printBadEmails() {
 	cout << "Incorrect email formats:" << '\n';
 	cout << endl;
@@ -104,7 +104,7 @@ void Roster::printBadEmails() {
 	cout << '\n';
 }
 
-// Removing student by studentID
+// Removing by studentID
 void Roster::remove(string studentID) {
 	bool removed = false;
 	for (int i = 0; i < 5; i++) {
