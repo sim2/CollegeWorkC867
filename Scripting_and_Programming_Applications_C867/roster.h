@@ -13,13 +13,13 @@ class Roster {
 
 		void add(string studentIDVariable, string FirstNameVariable, string LastNameVariable, string EmailAddressVariable, int AgeVariable, int DaysToComplete1Variable, int DaysToComplete2Variable, int DaysToComplete3Variable, Degree);
 
-		void remove(string studentID);
+		void remove(string studentIDVariable);
 
-		void printByDegree(string DegreeType);
+		void printByDegreeProgram(int DegreeType);
 
-		void printDaysToComplete(string);
+		void printDaysInCourse(string);
 
-		void printBadEmails();
+		void printInvalidEmails();
 
 		int addIndex = 0;
 

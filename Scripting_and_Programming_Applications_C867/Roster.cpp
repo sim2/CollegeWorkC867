@@ -41,7 +41,7 @@ void Roster::printAll() {
 }
 
 //Print Average DaysToComplete
-void Roster::printDaysToComplete(string studentIDVariable) {
+void Roster::printDaysInCourse(string studentIDVariable) {
 	for (int i = 0; i < 5; i++) {
 		if ((*classRosterArray[i]).getStudentID() == studentIDVariable) {
 			int avg = 0;
@@ -53,7 +53,7 @@ void Roster::printDaysToComplete(string studentIDVariable) {
 	cout << '\n';
 
 // Print by Degree Type
-void Roster::printByDegree(string DegreeType) {
+void Roster::printByDegreeProgram(int DegreeType) {
 	Degree testDeg = Degree::SOFTWARE;
 	if (degree == "SECURITY") {
 		testDeg = Degree::SECURITY;
@@ -77,7 +77,7 @@ void Roster::printByDegree(string DegreeType) {
 }
 
 // Reconcile Emails
-void Roster::printBadEmails() {
+void Roster::printInvalidEmails() {
 	cout << "Incorrect email formats:" << '\n';
 	cout << endl;
 	for (int i = 0; i < 5; i++) {
@@ -105,7 +105,7 @@ void Roster::printBadEmails() {
 }
 
 // Removing by studentID
-void Roster::remove(string studentID) {
+void Roster::remove(string studentIDVariable) {
 	bool removed = false;
 	for (int i = 0; i < 5; i++) {
 		if (classRosterArray[i] != NULL) {
@@ -116,31 +116,12 @@ void Roster::remove(string studentID) {
 		}
 	}
 	if (!removed) {
-		cout << "Student with ID Number: " << studentID << " has not been found." << '\n';
+		cout << "Student with ID Number: " << studentID << " not found." << '\n';
 	}
 }
 
 // F
 /*
-
-2.  Create an instance of the Roster class called classRoster.
-
-3.  Add each student to classRoster.
-
-4.  Convert the following pseudo code to complete the rest of the main() function :
-	classRoster.printAll();
-classRoster.printInvalidEmails();
-//loop through classRosterArray and for each element:
-classRoster.printAverageDaysInCourse(/*current_object's student id*/);  /*
-classRoster.printByDegreeProgram(SOFTWARE);
-classRoster.remove("A3");
-classRoster.remove("A3");
-//expected: the above line should print a message saying such a student with this ID was not found.
-
-5.  Call the destructor to release the Roster memory.
-
-*/
-
 void main() {
 
 	// F.1
