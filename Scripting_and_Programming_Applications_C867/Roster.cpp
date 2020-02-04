@@ -50,26 +50,25 @@ void Roster::printnumDays(string studentID) {
 			int avg = 0;
 			avg = ((*classRosterArray[i]).getDaysToComplete()[0] + (*classRosterArray[i]).getDaysToComplete()[1]
 				+ (*classRosterArray[i]).getDaysToComplete()[2]) / 3;
-			cout << "The average days it took the student with studentID: " << studentID << " to finish 3 courses: " << avg << '\n';
+			cout << "Average days for studentID: " << studentID << " to finish 3 courses: " << avg << '\n';
 		}
 	}
 	cout << '\n';
-}
 
 // Printing student by Degree Type
 void Roster::printByDegree(string degree) {
 	Degree testDeg = Degree::SOFTWARE;
 	if (degree == "SECURITY") {
 		testDeg = Degree::SECURITY;
-		cout << "Displaying students with a Security degree: " << endl;
+		cout << "Security Degree: " << endl;
 	}
 	if (degree == "NETWORKING") {
 		testDeg = Degree::NETWORKING;
-		cout << "Displaying students with a Networking degree: " << endl;
+		cout << "Networking Degree: " << endl;
 	}
 	if (degree == "SOFTWARE") {
 		testDeg = Degree::SOFTWARE;
-		cout << "Displaying students with a Software degree: " << endl;
+		cout << "Software Degree: " << endl;
 	}
 	cout << endl;
 	for (int i = 0; i < 5; i++) {
@@ -82,7 +81,7 @@ void Roster::printByDegree(string degree) {
 
 // Checking through emails
 void Roster::printBadEmails() {
-	cout << "Displaying incorrect email formats:" << '\n';
+	cout << "Incorrect email formats:" << '\n';
 	cout << endl;
 	for (int i = 0; i < 5; i++) {
 		bool foundCharAt = false;
@@ -120,7 +119,7 @@ void Roster::remove(string studentID) {
 		}
 	}
 	if (!removed) {
-		cout << "The student with ID: " << studentID << " was not found." << '\n';
+		cout << "Student with ID Number: " << studentID << " has not been found." << '\n';
 	}
 }
 

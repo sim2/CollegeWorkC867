@@ -86,17 +86,14 @@ void Student::setDegreeType(string DegreeVariable)
 	DegreeType = DegreeVariable;
 }
 
-//Student::Student() {}
-
-Degree Student::getDegree() {
+Degree Student::getDegreeType() {
 	return Degree::SOFTWARE;
 }
 
 
-
 void Student::print() {}
 
-// default deconstructor definition
+
 Student::~Student()
 {
 
