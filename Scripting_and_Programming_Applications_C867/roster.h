@@ -1,6 +1,6 @@
 #pragma once
 #include "Student.h"
-#include <arrray>
+#include <array>
 
 class Roster {
 
@@ -11,7 +11,7 @@ class Roster {
 
 		void printAll();
 
-		void add(string studentID, string FirstName, string LastName, string EmailAddress, int Age, int DaysToComplete1, int DaysToComplete2, int DaysToComplete3, DegreeType);
+		void add(string studentIDVariable, string FirstNameVariable, string LastNameVariable, string EmailAddressVariable, int AgeVariable, int DaysToComplete1Variable, int DaysToComplete2Variable, int DaysToComplete3Variable, Degree);
 
 		void remove(string studentID);
 

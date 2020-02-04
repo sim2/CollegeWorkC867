@@ -17,15 +17,15 @@ Roster::Roster(){
 
 }
 
-void Roster::add(string studentID, string FirstName, string LastName, string EmailAddress, int Age, int DaysToComplete1, int DaysToComplete2, int DaysToComplete3, Degree DegreeType) {
+void Roster::add(string studentIDVariable, string FirstNameVariable, string LastNameVariable, string EmailAddressVariable, int AgeVariable, int DaysToComplete1Variable, int DaysToComplete2Variable, int DaysToComplete3Variable, Degree DegreeTypeVariable) {
 	int DaysToComplete[] = { DaysToComplete1, DaysToComplete2, DaysToComplete3 };
-	if (degree == Degree::NETWORKING) {
+	if (DegreeType == Degree::NETWORKING) {
 		classRosterArray[addIndex++] = new NetworkStudent(studentID, FirstName, LastName, EmailAddress, Age, DaysToComplete, DegreeType);
 	}
-	if (degree == Degree::SECURITY) {
+	if (DegreeType == Degree::SECURITY) {
 		classRosterArray[addIndex++] = new SecurityStudent(studentID, FirstName, LastName, EmailAddress, Age, DaysToComplete, DegreeType);
 	}
-	if (degree == Degree::SOFTWARE) {
+	if (DegreeType == Degree::SOFTWARE) {
 		classRosterArray[addIndex++] = new SoftwareStudent(studentID, FirstName, LastName, EmailAddress, Age, DaysToComplete, DegreeType);
 	}
 }
