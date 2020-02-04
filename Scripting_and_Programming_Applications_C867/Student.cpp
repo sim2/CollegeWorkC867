@@ -6,6 +6,7 @@
 
 using namespace std;
 
+// 2 a, b, c, d
 Student::Student()
 {
 
@@ -83,7 +84,7 @@ void Student::setDaysToComplete(int DaysToComplete1, int DaysToComplete2, int Da
 
 void Student::setDegreeType(string DegreeVariable)
 {
-	DegreeType = DegreeVariable;
+	DegreeVariable = DegreeVariable;
 }
 
 Degree Student::getDegreeType() {

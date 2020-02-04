@@ -1,4 +1,6 @@
 #pragma once
+#include "Student.h"
+#include <arrray>
 
 class Roster {
 
