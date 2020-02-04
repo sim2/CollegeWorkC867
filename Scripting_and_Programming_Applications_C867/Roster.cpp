@@ -20,13 +20,13 @@ Roster::Roster(){
 void Roster::add(string studentIDVariable, string FirstNameVariable, string LastNameVariable, string EmailAddressVariable, int AgeVariable, int DaysToComplete1Variable, int DaysToComplete2Variable, int DaysToComplete3Variable, Degree DegreeTypeVariable) {
 	int DaysToComplete[] = { DaysToComplete1Variable, DaysToComplete2Variable, DaysToComplete3Variable };
 	if (DegreeTypeVariable == Degree::NETWORKING) {
-		classRosterArray[addIndex++] = new NetworkStudent(studentIDVariable, FirstNameVariable, LastNameVariable, EmailAddressVariable, AgeVariable, DaysToCompleteVariable, DegreeTypeVariable);
+		classRosterArray[addIndex++] = new NetworkStudent(studentIDVariable, FirstNameVariable, LastNameVariable, EmailAddressVariable, AgeVariable, DaysToComplete, DegreeTypeVariable);
 	}
 	if (DegreeTypeVariable == Degree::SECURITY) {
-		classRosterArray[addIndex++] = new SecurityStudent(studentIDVariable, FirstNameVariable, LastNameVariable, EmailAddressVariable, AgeVariable, DaysToCompleteVariable, DegreeTypeVariable);
+		classRosterArray[addIndex++] = new SecurityStudent(studentIDVariable, FirstNameVariable, LastNameVariable, EmailAddressVariable, AgeVariable, DaysToComplete, DegreeTypeVariable);
 	}
 	if (DegreeTypeVariable == Degree::SOFTWARE) {
-		classRosterArray[addIndex++] = new SoftwareStudent(studentIDVariable, FirstNameVariable, LastNameVariable, EmailAddressVariable, AgeVariable, DaysToCompleteVariable, DegreeTypeVariable);
+		classRosterArray[addIndex++] = new SoftwareStudent(studentIDVariable, FirstNameVariable, LastNameVariable, EmailAddressVariable, AgeVariable, DaysToComplete, DegreeTypeVariable);
 	}
 }
 
