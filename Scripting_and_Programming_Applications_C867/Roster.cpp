@@ -11,16 +11,12 @@
 #include "softwareStudent.h"
 #include "pch.h"
 
-// E.1
+using namespace std;
 
-class Roster{
+Roster::Roster(){
 
-public:
-	Student classRosterArray[5];
-	
-};
+}
 
-//Updating RosterArray
 void Roster::add(string studentID, string FirstName, string LastName, string EmailAddress, int Age, int DaysToComplete1, int DaysToComplete2, int DaysToComplete3, Degree DegreeType) {
 	int DaysToComplete[] = { DaysToComplete1, DaysToComplete2, DaysToComplete3 };
 	if (degree == Degree::NETWORKING) {
@@ -34,7 +30,7 @@ void Roster::add(string studentID, string FirstName, string LastName, string Ema
 	}
 }
 
-//printing entire roster
+//Print Roster
 void Roster::printAll() {
 	cout << "Roster:" << '\n';
 	cout << endl;
