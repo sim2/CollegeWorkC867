@@ -41,19 +41,19 @@ void Roster::printAll() {
 }
 
 //Print Average DaysToComplete
-void Roster::printnumDays(string studentID) {
+void Roster::printDaysToComplete(string studentIDVariable) {
 	for (int i = 0; i < 5; i++) {
-		if ((*classRosterArray[i]).getStudentID() == studentID) {
+		if ((*classRosterArray[i]).getStudentID() == studentIDVariable) {
 			int avg = 0;
 			avg = ((*classRosterArray[i]).getDaysToComplete()[0] + (*classRosterArray[i]).getDaysToComplete()[1]
 				+ (*classRosterArray[i]).getDaysToComplete()[2]) / 3;
-			cout << "Average days for studentID: " << studentID << " to finish 3 courses: " << avg << '\n';
+			cout << "Average days for studentID: " << studentIDVariable << " to complete: " << avg << '\n';
 		}
 	}
 	cout << '\n';
 
 // Print by Degree Type
-void Roster::printByDegree(string degree) {
+void Roster::printByDegree(string DegreeType) {
 	Degree testDeg = Degree::SOFTWARE;
 	if (degree == "SECURITY") {
 		testDeg = Degree::SECURITY;
