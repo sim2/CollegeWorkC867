@@ -174,11 +174,11 @@ void main() {
 // print everything
 classRoster.printAll();
 
-classRoster.printBadEmails();
+classRoster.printInvalidEmails();
 
 classRoster.printDaysToComplete("A1");
 
-classRoster.printByDegree("SOFTWARE");
+classRoster.printByDegreeType("SOFTWARE");
 
 classRoster.remove("A3");
 
