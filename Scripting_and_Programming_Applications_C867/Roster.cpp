@@ -154,7 +154,6 @@ void main() {
 					finalarrayString.push_back(indivString);
 			}
 
-	}
 
 	if (finalarrayString[8] == "SECURITY") {
 		myDegree = Degree::SECURITY;
@@ -167,7 +166,7 @@ void main() {
 	}
 	classRoster.add(finalarrayString[0], finalarrayString[1], finalarrayString[2], finalarrayString[3], stoi(finalarrayString[4]), stoi(finalarrayString[5]),
 		stoi(finalarrayString[6]), stoi(finalarrayString[7]), myDegree);
-}
+	}
 
 
 // print everything
@@ -182,6 +181,7 @@ classRoster.printByDegreeType("SOFTWARE");
 classRoster.remove("A3");
 
 classRoster.remove("A3");
+
 }
 
 //Deconstructor
