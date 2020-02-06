@@ -48,6 +48,7 @@ void Roster::printDaysInCourse(string studentIDVariable) {
 			avg = ((*classRosterArray[i]).getDaysToComplete()[0] + (*classRosterArray[i]).getDaysToComplete()[1]
 				+ (*classRosterArray[i]).getDaysToComplete()[2]) / 3;
 			cout << "Average days for studentID: " << studentIDVariable << " to complete: " << avg << '\n';
+			}
 		}
 		cout << '\n';
 	}
@@ -128,6 +129,7 @@ void main() {
 	cout << "Scripting and Programming Applications using C++" << endl;
 	cout << "Student ID = 858824 Name = Simcha Hochman" endl;
 
+	//studentData
 	const string studentData[] =
 	{ "A1,John,Smith,John1989@gm ail.com,20,30,35,40,SECURITY",
 	  "A2,Suzan,Erickson,Erickson_1990@gmailcom,19,50,30,40,NETWORK",
@@ -136,38 +138,35 @@ void main() {
 	  "A5,Simcha,Hochman,shochm1@wgu.edu,27,40,50,21,SOFTWARE"
 	};
 
+	Roster classRoster;
 
-	// iterate through student data
-	std::string studentData = "";
-	std::istringstream eachStudent(studentData);
-	std::string token;
-
+	Degree myDegree;
 
 	// Copy studentData to New strings
-	for (i = 0; i < 5; i++) {
-		stringstream eachStudent(studentData[i])
+	for (int i = 0; i < 5; i++) {
+		stringstream eachStudent(studentData[i]);
 
-			array <string > endString;
+			array <string > finalarrayString;
 
 			while (eachStudent.good()) {
 				string indivString;
-					getline(eachStudent, endString, ",");
-					result.push_back(indivString);
+					getline(eachStudent, indivString, ",");
+					finalarrayString.push_back(indivString);
 			}
 
 	}
 
-	if (endString[8] == "SECURITY") {
+	if (finalarrayString[8] == "SECURITY") {
 		myDegree = Degree::SECURITY;
 	}
-	if (endString[8] == "SOFTWARE") {
+	if (finalarrayString[8] == "SOFTWARE") {
 		myDegree = Degree::SOFTWARE;
 	}
-	if (endString[8] == "NETWORK") {
+	if (finalarrayString[8] == "NETWORK") {
 		myDegree = Degree::NETWORKING;
 	}
-	classRoster.add(endString[0], endString[1], endString[2], endString[3], stoi(endString[4]), stoi(endString[5]),
-		stoi(endString[6]), stoi(endString[7]), myDegree);
+	classRoster.add(finalarrayString[0], finalarrayString[1], finalarrayString[2], finalarrayString[3], stoi(finalarrayString[4]), stoi(finalarrayString[5]),
+		stoi(finalarrayString[6]), stoi(finalarrayString[7]), myDegree);
 }
 
 
