@@ -54,23 +54,23 @@ void Roster::printDaysInCourse(string studentIDVariable) {
 	}
 
 // Print by Degree Type
-void Roster::printByDegreeProgram(int DegreeType) {
+void Roster::printByDegreeProgram(string DegreeType) {
 	Degree testDeg = Degree::SOFTWARE;
-	if (degree == "SECURITY") {
+	if (DegreeType == "SECURITY") {
 		testDeg = Degree::SECURITY;
 		cout << "Security Degree: " << endl;
 	}
-	if (degree == "NETWORKING") {
+	if (DegreeType == "NETWORKING") {
 		testDeg = Degree::NETWORKING;
 		cout << "Networking Degree: " << endl;
 	}
-	if (degree == "SOFTWARE") {
+	if (DegreeType == "SOFTWARE") {
 		testDeg = Degree::SOFTWARE;
 		cout << "Software Degree: " << endl;
 	}
 	cout << endl;
 	for (int i = 0; i < 5; i++) {
-		if (testDeg == (*classRosterArray[i]).getDegree()) {
+		if (testDeg == (*classRosterArray[i]).getDegreeType()) {
 			(*classRosterArray[i]).print();
 		}
 	}
@@ -110,7 +110,7 @@ void Roster::remove(string studentIDVariable) {
 	bool removed = false;
 	for (int i = 0; i < 5; i++) {
 		if (classRosterArray[i] != NULL) {
-			if (studentID == classRosterArray[i]->getStudentID()) {
+			if (studentIDVariable == classRosterArray[i]->getStudentID()) {
 				classRosterArray[i] = nullptr;
 				removed = true;
 			}
@@ -127,7 +127,7 @@ void main() {
 
 	// F.1
 	cout << "Scripting and Programming Applications using C++" << endl;
-	cout << "Student ID = 858824 Name = Simcha Hochman" endl;
+	cout << "Student ID = 858824 Name = Simcha Hochman" << endl;
 
 	//studentData
 	const string studentData[] =
@@ -146,11 +146,11 @@ void main() {
 	for (int i = 0; i < 5; i++) {
 		stringstream eachStudent(studentData[i]);
 
-			array <string > finalarrayString;
+			vector <string> finalarrayString;
 
 			while (eachStudent.good()) {
 				string indivString;
-					getline(eachStudent, indivString, ",");
+					getline(eachStudent, indivString, ',');
 					finalarrayString.push_back(indivString);
 			}
 
@@ -174,9 +174,9 @@ classRoster.printAll();
 
 classRoster.printInvalidEmails();
 
-classRoster.printDaysToComplete("A1");
+classRoster.printDaysInCourse("A1");
 
-classRoster.printByDegreeType("SOFTWARE");
+classRoster.printByDegreeProgram("SOFTWARE");
 
 classRoster.remove("A3");
 

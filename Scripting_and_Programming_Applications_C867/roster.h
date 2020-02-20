@@ -15,7 +15,7 @@ class Roster {
 
 		void remove(string studentIDVariable);
 
-		void printByDegreeProgram(int DegreeType);
+		void printByDegreeProgram(string DegreeType);
 
 		void printDaysInCourse(string studentIDVariable);
 
