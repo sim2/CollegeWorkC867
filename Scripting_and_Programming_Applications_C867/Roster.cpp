@@ -174,7 +174,7 @@ classRoster.printAll();
 
 classRoster.printInvalidEmails();
 
-classRoster.printDaysInCourse("A1");
+classRoster.printDaysInCourse("A");
 
 classRoster.printByDegreeProgram("SOFTWARE");
 
