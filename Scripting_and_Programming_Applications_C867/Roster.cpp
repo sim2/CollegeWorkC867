@@ -182,7 +182,7 @@ classRoster.remove("A3");
 
 classRoster.remove("A3");
 
-}
+} 
 
 //Deconstructor
 Roster::~Roster() {}
